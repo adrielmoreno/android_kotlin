@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android-Fundamentos</string>
+    <string name="hi_keep">hi keep</string>
+    <string name="name">Name</string>
+    <string name="text_button">Edit Profile</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="favorito">Favority</string>
+    <string name="btn_mostrar_usuario">Show button</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android-Fundamentos</string>
+    <string name="hi_keep">Hola Keep</string>
+    <string name="name">Nombre</string>
+    <string name="text_button">Edit Profile</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="favorito">Favorite</string>
+    <string name="btn_mostrar_usuario">Botón mostrar usuario</string>
+</resources>
