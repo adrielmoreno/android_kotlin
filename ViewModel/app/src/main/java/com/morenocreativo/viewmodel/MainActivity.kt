@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import com.morenocreativo.viewmodel.databinding.ActivityMainBinding
+import com.morenocreativo.viewmodel.model.Numbers
 
 class MainActivity : AppCompatActivity() {
 
@@ -56,7 +57,9 @@ class MainActivity : AppCompatActivity() {
                 viewModel.cambiarState()
             }
             btnNext.setOnClickListener {
-                SecondActivity.launch(this@MainActivity, binding.tvText1.text.toString())
+                val outData =
+                    Numbers(binding.tvText1.text.toString(), binding.tvState.text.toString())
+                SecondActivity.launch(this@MainActivity, outData)
             }
         }
     }
