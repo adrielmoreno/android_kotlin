@@ -55,9 +55,8 @@ class MainActivity : AppCompatActivity() {
             tvState.setOnClickListener {
                 viewModel.cambiarState()
             }
-            btnNext.setOnClickListener{
-                val intent = Intent(this@MainActivity, SecondActivity::class.java)
-                startActivity(intent)
+            btnNext.setOnClickListener {
+                SecondActivity.launch(this@MainActivity, binding.tvText1.text.toString())
             }
         }
     }
