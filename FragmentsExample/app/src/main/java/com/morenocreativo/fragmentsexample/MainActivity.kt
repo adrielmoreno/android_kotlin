@@ -2,16 +2,20 @@ package com.morenocreativo.fragmentsexample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.morenocreativo.fragmentsexample.databinding.ActivityMainBinding
 import com.morenocreativo.fragmentsexample.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(binding.container.id, MainFragment.newInstance())
                 .commitNow()
         }
     }
