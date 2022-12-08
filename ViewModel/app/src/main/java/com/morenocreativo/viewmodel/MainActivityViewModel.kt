@@ -11,6 +11,9 @@ class MainActivityViewModel : ViewModel() {
 
 
     var num = Random.nextInt()
+    fun cambiarNumero() {
+        num = Random.nextInt()
+    }
 
     val numLiveData: MutableLiveData<Int> by lazy {
         MutableLiveData<Int>()
