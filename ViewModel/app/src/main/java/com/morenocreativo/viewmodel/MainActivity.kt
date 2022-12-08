@@ -1,5 +1,6 @@
 package com.morenocreativo.viewmodel
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             }
             tvState.setOnClickListener {
                 viewModel.cambiarState()
+            }
+            btnNext.setOnClickListener{
+                val intent = Intent(this@MainActivity, SecondActivity::class.java)
+                startActivity(intent)
             }
         }
     }
