@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), MainAdapterCallback {
 
     private fun setListeners() {
         binding.btnadd.setOnClickListener {
-            list.add("Soy el lemento ${list.size}")
+            list.add("Soy el elemento ${list.size}")
             adater.updateList(list)
         }
     }
