@@ -14,7 +14,7 @@ class MainActivityViewModel : ViewModel() {
     fun cambiarNumero() {
         num = Random.nextInt()
     }
-
+// lazy: se va usar cuando se llame
     val numLiveData: MutableLiveData<Int> by lazy {
         MutableLiveData<Int>()
     }
@@ -40,7 +40,7 @@ class MainActivityViewModel : ViewModel() {
         }
 
     }
-
+// sealed indica puede ser de una clase cualquiera de las opciones
     sealed class MainActivityState {
         data class Success(val num: Int) : MainActivityState()
         data class Error(val message: String) : MainActivityState()

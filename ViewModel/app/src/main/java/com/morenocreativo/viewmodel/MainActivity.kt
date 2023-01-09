@@ -58,7 +58,9 @@ class MainActivity : AppCompatActivity() {
             }
             btnNext.setOnClickListener {
                 val outData =
-                    Numbers(binding.tvText1.text.toString(), binding.tvState.text.toString())
+                    Numbers(
+                        binding.tvText1.text.toString(),
+                        binding.tvState.text.toString())
                 SecondActivity.launch(this@MainActivity, outData)
             }
         }
